@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Loan EMI Calculator</title>
+    </head>
+    <body>
+        <fieldset>
+            <form method="post" action="../controller/EMIcheck.php">
+                <table align="center" width="100%">
+                    <tr>
+                        <td align="center">
+                            <h1><b>Loan EMI Calculator</b></h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Loan Amount:<br>
+                            <input type="number" name="loan_amount" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Interest Rate (%):<br>
+                            <input type="number" step="0.01" name="interest_rate" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Loan Tenure:<br>
+                            <input type="number" name="loan_tenure" required/> Years
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <input type="submit" name="submit" value="Calculate"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </body>
+    </html>

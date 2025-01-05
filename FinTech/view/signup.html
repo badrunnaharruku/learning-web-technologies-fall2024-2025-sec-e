@@ -1,0 +1,77 @@
+
+<html>
+    <head>
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <fieldset>
+            <form method="post" action="../controller/signupcheck.php">
+                <table align="center" width="100%">
+                    <tr>
+                        <td align="center">
+                            <h1><b>Sign Up</b></h1>
+                            <h3>Fill in the details to create an account</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Username:<br>
+                            <input type="text" name="username" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Email:<br>
+                            <input type="email" name="email" required />
+                        </td>
+                    
+                    </tr>
+                    
+                    <tr><br>
+                        <td align="center">Gender:
+                            <select name="gender" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">DOB:
+                            <input type="date" name="dob" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Address:<br>
+                            <input type="text" name="address" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Phone No:<br>
+                            <input type="tel" name="phone" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Password:<br>
+                            <input type="password" name="password" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">Confirm Password:<br>
+                            <input type="password" name="confirm_password" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><br><br>
+                            <input type="submit" name="submit" value="Sign Up"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><br>
+                            <a href="login.html" name="login">Already have an account? Login here</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </body>
+</html>

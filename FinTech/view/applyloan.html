@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Apply Loan</title>
+    </head>
+    <body>
+        <fieldset>
+    <form method="post" action="../controller/applyloan.php">
+        <table align="center" width="100%">
+            <tr>
+                <td align="center">
+                    <h1><b>Apply Loan</b></h1>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Employment Status:<br>
+                    <input type="text" name="employment_status" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Monthly Income:<br>
+                    <input type="number" name="monthly_income" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Loan Amount:<br>
+                    <input type="number" name="loan_amount" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Interest Rate:<br>
+                    <input type="number" step="0.01" name="interest_rate" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Application Date:
+                    <input type="date" name="application_date" required/>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="checkbox" name="agree_terms" required/> I agree to the terms and conditions
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" name="submit" value="Apply Loan"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>
