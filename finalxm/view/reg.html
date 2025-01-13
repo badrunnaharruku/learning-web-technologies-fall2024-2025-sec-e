@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <form action="../controller/register_author.php" method="POST" onsubmit="return validateForm();">
+            Name: <input type="text" name="author_name"><br>
+            Contact: <input type="text" name="contact_no"><br>
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="password"><br>
+            <button type="submit">Register</button>
+        </form>
+        
+        <script>
+            function validateForm() {
+                if (document.forms[0].author_name.value == "" || 
+                    document.forms[0].contact_no.value == "" || 
+                    document.forms[0].username.value == "" || 
+                    document.forms[0].password.value == "") {
+                    alert("Please fill all fields");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <form action="../controller/login.php" method="POST" onsubmit="return validateLogin();">
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="password"><br>
+            <button type="submit">Login</button>
+        </form>
+        <script>
+            function validateLogin() {
+                if (document.forms[0].username.value == "" || 
+                    document.forms[0].password.value == "") {
+                    alert("Please fill all fields!");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        
+        <input type="text" id="search" placeholder="Search Author">
+        <div id="searchResults"></div>
+        <script>
+            document.getElementById('search').onkeyup = function() {
+    var query = this.value;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "search_author.php?query=" + query, true);
+    xhr.onload = function() {
+        document.getElementById('searchResults').innerHTML = xhr.responseText;
+    };
+    xhr.send();
+};
+        </script>
+    </body>
+</html>
