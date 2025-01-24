@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8e7e3 0%, #7f7a86 100%);
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #4f2a2a;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #a191b1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+table th, table td {
+    border: 1px solid #4f2a2a;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+table th {
+    background-color: #4f2a2a;
+    color: #f4f4f9;
+}
+
+table td a {
+    color: #2d193a;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: linear-gradient(135deg, #2d193a 0%, #030633 100%);
+    color: rgb(228, 212, 212);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #111d23 0%, #092a15 100%);
+}
+
+a button {
+    display: inline-block;
+    margin: 0;
+}
